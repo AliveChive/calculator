@@ -2,11 +2,17 @@
 from config import *
 from colorama import init
 from termcolor import colored
-init()
+import pyperclip
+init ()
 print (colored("enter the first number",colour))
 FirstNum = input()
 print (colored("enter the second number",colour))
 SecondNum = input()
 sum = float(FirstNum) + float(SecondNum)
 print (colored("your answer is: " + str (sum),colour))
-input()
+print ('Press c to copy')
+choice = input()
+if choice.lower() == 'c':
+    pyperclip.copy(int(sum))
+    print ('copied')
+input ()
