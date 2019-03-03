@@ -1,8 +1,12 @@
 #enter the 2 numbers you want added together
-print ("enter the first number")
+from config import *
+from colorama import init
+from termcolor import colored
+init()
+print (colored("enter the first number",colour))
 FirstNum = input()
-print ("enter the second number")
+print (colored("enter the second number",colour))
 SecondNum = input()
 sum = float(FirstNum) + float(SecondNum)
-print ("your answer is: ", (sum))
+print (colored("your answer is: " + str (sum),colour))
 input()
