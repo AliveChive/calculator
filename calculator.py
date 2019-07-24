@@ -3,6 +3,7 @@ from config import *
 from colorama import init
 from termcolor import colored
 import pyperclip
+colour = "green" #edits the colour
 init ()
 print (colored("enter the first number",colour))
 FirstNum = input()
